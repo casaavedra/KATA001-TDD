@@ -1,10 +1,8 @@
 class Numeros:
     def numElementos(self, cadena):
+        numeros = cadena.split(',')
 
         if cadena == "":
             return [0]
         else:
-            if len(cadena) == 1:
-                return [1]
-            else:
-                return [2]
+            return [len(numeros)]
