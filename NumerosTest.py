@@ -5,3 +5,6 @@ from Numeros import Numeros
 class NumerosTest(TestCase):
     def test_numElementos(self):
         self.assertEqual(Numeros().numElementos(""),[0],"Cadena vacía")
+
+    def test_numElementos_1(self):
+        self.assertEqual(Numeros().numElementos("8"), [1], "Un elemento")
