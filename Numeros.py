@@ -1,3 +1,3 @@
 class Numeros:
-    def numElementos(cadena):
-        pass
+    def numElementos(self, cadena):
+        return [0]

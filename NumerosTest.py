@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-import Numeros
+from Numeros import Numeros
 
 class NumerosTest(TestCase):
     def test_numElementos(self):
