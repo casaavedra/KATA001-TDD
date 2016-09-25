@@ -8,5 +8,10 @@ class Numeros:
     def minimo(self, cadena):
         array = []
         array = self.numElementos(cadena)
-        array.append(None)
-        return array
+
+        if cadena == "":
+            array.append(None)
+            return array
+        else:
+            array.append(1)
+            return array
