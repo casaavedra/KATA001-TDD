@@ -33,10 +33,13 @@ class Numeros:
         elif "," in cadena:
             numeros = cadena.split(',')
 
-            if numeros[0] > numeros[1]:
-                array.append(int(numeros[0]))
-            else:
-                array.append(int(numeros[1]))
+            for i in range(0, len(numeros)):
+                if i == 0:
+                    maximo = numeros[0]
+                else:
+                    if numeros[i] > maximo:
+                        maximo = numeros[i]
+            array.append(int(maximo))
         else:
             array.append(int(cadena))
         return array
