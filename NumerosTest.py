@@ -54,3 +54,7 @@ class NumerosTest(TestCase):
 
     def test_promedio_2(self):
         self.assertEqual(Numeros().promedio("8,2"), [2, 2, 8, 5], "Dos elementos, 2 mínimo, 8 máximo, 5 promedio")
+
+    def test_promedio_N(self):
+        self.assertEqual(Numeros().promedio("8,2,9,0,5"), [5, 0, 9, 4.8], "Cinco elementos, 0 mínimo, 9 máximo, 4.8 promedio")
+        self.assertEqual(Numeros().promedio("1,2,2,3,4,5"), [6, 1, 5, 2.83], "Seis elementos, 1 mínimo, 5 máximo, 2.83 promedio")
