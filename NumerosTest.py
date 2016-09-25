@@ -37,3 +37,6 @@ class NumerosTest(TestCase):
 
     def test_maximo_1(self):
         self.assertEqual(Numeros().maximo("1"), [1, 1, 1], "Un elemento, 1 mínimo, 1 máximo")
+
+    def test_maximo_2(self):
+        self.assertEqual(Numeros().maximo("8,2"), [2, 2, 8], "Dos elementos, 2 mínimo, 8 máximo")
