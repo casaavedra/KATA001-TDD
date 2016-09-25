@@ -27,5 +27,9 @@ class Numeros:
 
     def maximo(self, cadena):
         array = self.minimo(cadena)
-        array.append(None)
+
+        if cadena == "":
+            array.append(None)
+        else:
+            array.append(1)
         return array
