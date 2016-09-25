@@ -48,6 +48,11 @@ class Numeros:
         array = self.maximo(cadena)
         if cadena == "":
             array.append(None)
+        elif "," in cadena:
+            numeros = cadena.split(',')
+            promedio = (int(numeros[0])+int(numeros[1]))/2
+
+            array.append(promedio)
         else:
             array.append(int(cadena))
         return array
