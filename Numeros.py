@@ -14,10 +14,14 @@ class Numeros:
             return array
         elif "," in cadena:
             numeros = cadena.split(',')
-            if numeros[0] < numeros[1]:
-                array.append(int(numeros[0]))
-            else:
-                array.append(int(numeros[1]))
+
+            for i in range(0, len(numeros)):
+                if i == 0:
+                    minimo = numeros[0]
+                else:
+                    if numeros[i] < minimo:
+                        minimo = numeros[i]
+            array.append(int(minimo))
             return array
         else:
             array.append(int(cadena))
