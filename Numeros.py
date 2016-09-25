@@ -46,5 +46,8 @@ class Numeros:
 
     def promedio(self, cadena):
         array = self.maximo(cadena)
-        array.append(None)
+        if cadena == "":
+            array.append(None)
+        else:
+            array.append(int(cadena))
         return array
