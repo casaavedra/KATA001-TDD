@@ -34,3 +34,6 @@ class NumerosTest(TestCase):
     # Iteración 3
     def test_maximo(self):
         self.assertEqual(Numeros().maximo(""), [0, None, None], "No existe máximo")
+
+    def test_maximo_1(self):
+        self.assertEqual(Numeros().maximo("1"), [1, 1, 1], "Un elemento, 1 mínimo, 1 máximo")
