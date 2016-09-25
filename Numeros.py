@@ -50,9 +50,12 @@ class Numeros:
             array.append(None)
         elif "," in cadena:
             numeros = cadena.split(',')
-            promedio = (int(numeros[0])+int(numeros[1]))/2
+            promedio = 0
 
-            array.append(promedio)
+            for i in range(0, len(numeros)):
+                promedio = promedio + int(numeros[i])
+
+            array.append(promedio/len(numeros))
         else:
             array.append(int(cadena))
         return array
