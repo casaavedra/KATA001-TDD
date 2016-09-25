@@ -15,3 +15,7 @@ class NumerosTest(TestCase):
     def test_numElementos_N(self):
         self.assertEqual(Numeros().numElementos("8,2,9,0,5"), [5], "Cinco elementos")
         self.assertEqual(Numeros().numElementos("1,2,2,3,4,5"), [6], "Seis elementos")
+
+    #Iteración 2
+    def test_numElementos_min(self):
+        self.assertEqual(Numeros().numElementos(""),[0,""],"Cadena vacía. No existe mínimo")
