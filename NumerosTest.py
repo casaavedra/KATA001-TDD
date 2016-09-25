@@ -20,3 +20,6 @@ class NumerosTest(TestCase):
     #Iteración 2
     def test_minimo(self):
         self.assertEqual(Numeros().minimo(""), [0, None], "No existe mínimo")
+
+    def test_minimo_1(self):
+        self.assertEqual(Numeros().minimo("1"), [1, 1], "Un elemento, 1 mínimo")
