@@ -17,7 +17,7 @@ class NumerosTest(TestCase):
         self.assertEqual(Numeros().numElementos("8,2,9,0,5"), [5], "Cinco elementos")
         self.assertEqual(Numeros().numElementos("1,2,2,3,4,5"), [6], "Seis elementos")
 
-    #Iteración 2
+    # Iteración 2
     def test_minimo(self):
         self.assertEqual(Numeros().minimo(""), [0, None], "No existe mínimo")
 
@@ -44,3 +44,7 @@ class NumerosTest(TestCase):
     def test_maximo_N(self):
         self.assertEqual(Numeros().maximo("8,2,9,0,5"), [5, 0, 9], "Cinco elementos, 0 mínimo, 9 máximo")
         self.assertEqual(Numeros().maximo("1,2,2,3,4,5"), [6, 1, 5], "Seis elementos, 1 mínimo, 5 máximo")
+
+    # Iteración 4
+    def test_promedio(self):
+        self.assertEqual(Numeros().promedio(""), [0, None, None, None], "No existe promedio")

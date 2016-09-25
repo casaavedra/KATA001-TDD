@@ -43,3 +43,6 @@ class Numeros:
         else:
             array.append(int(cadena))
         return array
+
+    def promedio(self, cadena):
+        pass
