@@ -6,12 +6,10 @@ class Numeros:
             return [len(cadena.split(','))]
 
     def minimo(self, cadena):
-        array = []
         array = self.numElementos(cadena)
 
         if cadena == "":
             array.append(None)
-            return array
         elif "," in cadena:
             numeros = cadena.split(',')
 
@@ -22,7 +20,7 @@ class Numeros:
                     if numeros[i] < minimo:
                         minimo = numeros[i]
             array.append(int(minimo))
-            return array
         else:
             array.append(int(cadena))
-            return array
+
+        return array
