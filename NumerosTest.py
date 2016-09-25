@@ -3,8 +3,9 @@ from unittest import TestCase
 from Numeros import Numeros
 
 class NumerosTest(TestCase):
+    # Iteración 1
     def test_numElementos(self):
-        self.assertEqual(Numeros().numElementos(""),[0],"Cadena vacía")
+        self.assertEqual(Numeros().numElementos(""), [0], "Cadena vacía")
 
     def test_numElementos_1(self):
         self.assertEqual(Numeros().numElementos("8"), [1], "Un elemento")
@@ -17,5 +18,5 @@ class NumerosTest(TestCase):
         self.assertEqual(Numeros().numElementos("1,2,2,3,4,5"), [6], "Seis elementos")
 
     #Iteración 2
-    def test_numElementos_min(self):
-        self.assertEqual(Numeros().numElementos(""),[0,""],"Cadena vacía. No existe mínimo")
+    def test_minimo(self):
+        self.assertEqual(Numeros().minimo(""), [0, None], "No existe mínimo")
