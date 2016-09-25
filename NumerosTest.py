@@ -26,3 +26,7 @@ class NumerosTest(TestCase):
 
     def test_minimo_2(self):
         self.assertEqual(Numeros().minimo("8,2"), [2, 2], "Dos elementos, 2 mínimo")
+
+    def test_minimo_N(self):
+        self.assertEqual(Numeros().minimo("8,2,9,0,5"), [5, 0], "Cinco elementos, 0 mínimo")
+        self.assertEqual(Numeros().minimo("1,2,2,3,4,5"), [6, 1], "Seis elementos, 1 mínimo")
