@@ -30,6 +30,13 @@ class Numeros:
 
         if cadena == "":
             array.append(None)
+        elif "," in cadena:
+            numeros = cadena.split(',')
+
+            if numeros[0] > numeros[1]:
+                array.append(int(numeros[0]))
+            else:
+                array.append(int(numeros[1]))
         else:
-            array.append(1)
+            array.append(int(cadena))
         return array
