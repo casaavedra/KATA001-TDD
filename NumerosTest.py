@@ -30,3 +30,7 @@ class NumerosTest(TestCase):
     def test_minimo_N(self):
         self.assertEqual(Numeros().minimo("8,2,9,0,5"), [5, 0], "Cinco elementos, 0 mínimo")
         self.assertEqual(Numeros().minimo("1,2,2,3,4,5"), [6, 1], "Seis elementos, 1 mínimo")
+
+    # Iteración 3
+    def test_maximo(self):
+        self.assertEqual(Numeros().maximo(""), [0, None, None], "No existe máximo")

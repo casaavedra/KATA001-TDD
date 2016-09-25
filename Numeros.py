@@ -24,3 +24,6 @@ class Numeros:
             array.append(int(cadena))
 
         return array
+
+    def maximo(self, cadena):
+        pass
