@@ -26,4 +26,6 @@ class Numeros:
         return array
 
     def maximo(self, cadena):
-        pass
+        array = self.minimo(cadena)
+        array.append(None)
+        return array
