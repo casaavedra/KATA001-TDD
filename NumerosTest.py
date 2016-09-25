@@ -48,3 +48,6 @@ class NumerosTest(TestCase):
     # Iteración 4
     def test_promedio(self):
         self.assertEqual(Numeros().promedio(""), [0, None, None, None], "No existe promedio")
+
+    def test_promedio_1(self):
+        self.assertEqual(Numeros().promedio("1"), [1, 1, 1, 1], "Un elemento, 1 mínimo, 1 máximo, 1 promedio")
