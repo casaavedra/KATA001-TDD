@@ -8,5 +8,5 @@ class Numeros:
     def minimo(self, cadena):
         array = []
         array = self.numElementos(cadena)
-        array.append(0)
+        array.append(None)
         return array
