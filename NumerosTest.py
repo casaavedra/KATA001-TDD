@@ -23,3 +23,6 @@ class NumerosTest(TestCase):
 
     def test_minimo_1(self):
         self.assertEqual(Numeros().minimo("1"), [1, 1], "Un elemento, 1 mínimo")
+
+    def test_minimo_2(self):
+        self.assertEqual(Numeros().minimo("8,2"), [2, 2], "Dos elementos, 2 mínimo")
